@@ -26,6 +26,7 @@ const OilDiffuserAccessory = require('./lib/OilDiffuserAccessory');
 
 
 const ContactSensorAccessory = require('./lib/ContactSensorAccessory');
+const TemperatureAccessory = require('./lib/TemperatureAccessory');
 
 
 const PLUGIN_NAME = 'homebridge-tuya-lan';
@@ -54,7 +55,8 @@ const CLASS_DEF = {
     fanlight: SimpleFanLightAccessory,
     watervalve: ValveAccessory,
     oildiffuser: OilDiffuserAccessory,
-    contactsensor: ContactSensorAccessory
+    contactsensor: ContactSensorAccessory,
+    temperature: TemperatureAccessory
 };
 
 let Characteristic, PlatformAccessory, Service, Categories, AdaptiveLightingController, UUID;
